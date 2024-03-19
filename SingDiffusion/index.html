@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Tackling the Singularities at the Endpoints of Time Intervals in Diffusion Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Tackling the Singularities at the Endpoints of Time Intervals in Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/PangzeCheung" target="_blank">Pengze Zhang</a><sup>*1</sup>,</span>
+                <span class="author-block">
+                  Hubery Yin<sup>*2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=WDJL3gYAAAAJ&hl=zh-CN" target="_blank">Chen Li</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=5YZ3kvoAAAAJ&hl=zh-CN" target="_blank">Xiaohua Xie</a><sup>†1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block" style="margin-right: 1em;"><sup>1</sup>Sun Yat-sen University</span>
+              <span class="author-block" style="margin-right: 1em;"><sup>2</sup>Wechat, Tencent Inc.</span>
+                    <br>CVPR 2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, <sup>†</sup> Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/PangzeCheung/SingDiffusion" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2403.08381" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/SingDiffusionMain.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <small>Existing diffusion models encounter <strong>singularities</strong> when t=0 and t=1. Especially, due to the lack of consideration of the sampling at t=1, they will encounter the <strong>average brightness issue</strong>. To tackle this, we propose a plug-and-play <strong>SingDiffusion</strong> method (highlighted in red) to bridge this gap.</small>
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Most diffusion models assume that the reverse process adheres to a Gaussian distribution. However, this approximation has not been rigorously validated, especially at singularities, where t=0 and t=1. Improperly dealing with such singularities leads to an average brightness issue in applications, and limits the generation of images with extreme brightness or darkness. We primarily focus on tackling singularities from both theoretical and practical perspectives. Initially, we establish the error bounds for the reverse process approximation, and showcase its Gaussian characteristics at singularity time steps. Based on this theoretical insight, we confirm the singularity at <strong>t=1</strong> is conditionally <strong>removable</strong> while it at <strong>t=0</strong> is an <strong>inherent property</strong>. Upon these significant conclusions, we propose a novel <strong>plug-and-play</strong> method <strong>SingDiffusion</strong> to address the initial singular time step sampling, which not only effectively resolves the average brightness issue for a wide range of diffusion models without extra training efforts, but also enhances their generation capability in achieving notable lower FID scores. Code and models are released at <a href="https://github.com/PangzeCheung/SingDiffusion">https://github.com/PangzeCheung/SingDiffusion</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Seamlessly Adapt to Different Models</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Figure1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+           <small>In this paper, we explore <strong>singularities</strong> theoretically and propose a <strong>plug-and-play</strong> module <strong>SingDiffusion</strong> to address the sampling challenge at the initial singular time step. By integrating this module into existing pre-trained models, our approach effectively tackles the difficulties of generating both dark and bright images, and further enhancing overall image quality as confirmed by quantitative analysis.</small>
+
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Figure4.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <small>In this paper, we explore <strong>singularities</strong> theoretically and propose a <strong>plug-and-play</strong> module <strong>SingDiffusion</strong> to address the sampling challenge at the initial singular time step. By integrating this module into existing pre-trained models, our approach effectively tackles the difficulties of generating both dark and bright images, and further enhancing overall image quality as confirmed by quantitative analysis.</small>
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Definition of Singularities</h2>
+        <img src="static/images/Sing.png" alt="MY ALT TEXT"/>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Important Theoretical Contributions</h2>
+        <img src="static/images/formula.png" alt="MY ALT TEXT"/>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Tackling Average Brightness Issue</h2>
+        <img src="static/images/brightness.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <small>Comparison of stable diffusion models and SingDiffusion on average brightness issue.</small>
+        </h2>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Improve FID and CLIP Score on 30K COCO Prompts</h2>
+        <img src="static/images/curve.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <small>Comparison of Pareto curves between SingDiffusion, SD-1.5, and SD-2.0-base on 30k COCO images, across various guidance scales in [1.5, 2, 3, 4, 5, 6, 7, 8].</small>
+        </h2>   
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Seamlessly Adapt to ControlNet</h2>
+        <img src="static/images/control.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <small>SingDiffusion integrates seamlessly with ControlNet.</small>
+        </h2>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{ 
+zhang2024tackling, 
+title={Tackling the Singularities at the Endpoints of Time Intervals in Diffusion Models}, 
+author={Pengze Zhang and Hubery Yin and Chen Li and Xiaohua Xie},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. <br> We also thank to Eliahu Horwitz for the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">website template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
